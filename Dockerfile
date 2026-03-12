@@ -6,5 +6,5 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY bot.py .
-COPY my_spam_model.py
+COPY my_spam_model.py .
 CMD ["python", "bot.py", "my_spam_model.py"]
